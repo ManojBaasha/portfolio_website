@@ -1,113 +1,80 @@
-body,
-html {
-    height: 100%;
+
+*{
     margin: 0;
+    padding: 0;
 }
 
-.name {
-    /* center */
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: gray;
-    font-size: 70px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.ghost {
-    /*center*/
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    width: 400px;
-    height: 400px;
-}
-
-.space {
-    /* The image used */
-    background-image: url("space.png");
-    /* Full height */
+.box-animation{
+    background: black;
+    background: linear-gradient(to bottom, #000000, #131313);
     height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    height: 100vh;
 }
 
-.resume_button {
+.box-area {
     position: absolute;
-    top: 25%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+  }
+  .box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+  }
+  .box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+  }
+  .box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  .box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+  }
 
-.github_button {
-    position: absolute;
-    top: 40%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.linkedin_button {
-    position: absolute;
-    top: 55%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.email_button {
-    position: absolute;
-    top: 70%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.discord{
-    position: absolute;
-    top: 85%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/*  */
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
