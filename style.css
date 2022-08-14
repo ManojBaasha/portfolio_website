@@ -1,113 +1,137 @@
-body,
-html {
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Lobster&family=Silkscreen&display=swap');
+
+
+body{
     margin: 0;
+    padding: 0;
 }
 
-.name {
-    /* center */
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: gray;
-    font-size: 70px;
-    font-family: 'Roboto', sans-serif;
+.background{
+    background-image: url("./darkpurplebg.png");
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
 }
 
-.ghost {
-    /*center*/
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    width: 400px;
-    height: 400px;
-}
-
-.space {
-    /* The image used */
-    background-image: url("space.png");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
+.secbg{
+    background-image: url("./lightpurplebg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    position: fixed;
+    top: 10vh;
+    left: 8vw;
+    height: 80vh;
+    width: 84vw;
+    z-index: 1;
+    border-radius: 40px;
+}
+
+.name{
+    position: absolute;
+    top: 2vh;
+    left: 9vw;
+    font-size: 11vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.education{
+    position: absolute;
+    top: 32vh;
+    left: 40vw;
+    font-size: 3vw;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #B1B2F2;
+    z-index: 2;
 }
 
 .resume_button {
     position: absolute;
-    top: 25%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
+    top: 60vh;
+    left: 5vw;
+    width: 13vw;
+    background-color: #582F86;
+    border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .github_button {
     position: absolute;
-    top: 40%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
+    top: 60vh;
+    left: 20vw;
+    width: 13vw;
+    background-color: #582F86;
+    border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
 }
 
 .linkedin_button {
     position: absolute;
-    top: 55%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
+    top: 60vh;
+    left: 35vw;
+    width: 13vw;
+    background-color: #582F86;
+    border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
 }
 
 .email_button {
     position: absolute;
-    top: 70%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
+    top: 60vh;
+    left: 50vw;
+    width: 13vw;
+    background-color: #582F86;
+    border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .discord{
     position: absolute;
-    top: 85%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background-color: #7e877f;
+    top: 60vh;
+    left: 65vw;
+    width: 13vw;
+    background-color: #582F86;
+    border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
-/*  */
+
+
+
+
+
